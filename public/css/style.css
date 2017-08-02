@@ -1,0 +1,178 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+ body{
+  background-image: url(/images/image1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+ }
+
+
+#input_text:hover {
+    
+    border-bottom: 1px solid gold;
+    -webkit-box-shadow: 0 1px 0 0 gold;
+    box-shadow: 0 1px 0 0 gold;
+    font-size: 18px;
+    
+}
+
+
+ .main-content{
+
+  /*margin-left: 0em !important;*/
+  margin-top: 10em !important;
+  padding-left: 1em !important;
+ 
+ }
+ #text-form{
+  padding-left: 5px;
+  font-family: 'Indie Flower', cursive;
+ }
+ 
+  #nav-mobile li a {
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  color: white;
+ }
+ 
+
+ #nav-mobile li a:hover {
+  color: gold;
+ }
+ 
+
+ #ul1 li a {
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  color: white;
+ }
+
+ #ul1 li a:hover{
+  color: gold;
+ }
+ 
+ #button-form,#button-form-index{
+ color: white;
+}
+#button-form:hover,#button-form-index:hover{
+  color: gold;
+}
+
+
+/*#navbar{
+  opacity: 0.6;
+ overflow:hidden;
+  
+}*/
+#logo-container {
+ padding-top: 5px;
+}
+
+#password:hover,#email:hover,#fullname:hover,#username:hover{
+   border-bottom: 1px solid gold;
+    -webkit-box-shadow: 0 1px 0 0 gold;
+    box-shadow: 0 1px 0 0 gold;
+}
+#label-password,#label-email,#label-fullname,#label-username{
+  color: white;
+  opacity: 0.6;
+}
+#login{margin: 8% 5% 5% 12%;}
+#button-form{margin-left: 2%; }
+#signup{margin: 5% 5% 5% 12%;}
+
+
+/* #ul1 li a{
+  font-size: 18px;
+ }*/
+/* .box {
+   margin: 20% 20% 0 5%;
+   border: 1px solid gold;
+   min-width: 20%
+
+
+ }
+.box #search{
+  background-color: white;
+  margin-left: 5%;
+  border: 2px solid #333;
+
+}
+*/
+
+
+
+
+
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: #666;
+        background: transparent;
+    }
+}
+

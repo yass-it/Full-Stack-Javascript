@@ -1,0 +1,30 @@
+<%- include ./partials/head.ejs %>
+<head>
+	<title>Login</title>
+</head>
+	
+<div id="login" class="row">
+    <form action="/login" method="POST" class="col s6">
+     
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" name="username" type="text" class="white-text">
+          <label id="label-email" for="email">User Name</label>
+        </div>
+      </div>
+     
+      <div   class="row">
+        <div  class="input-field col s12">
+          <input id="password" name="password" type="password" class="white-text">
+          <label id="label-password" for="password">Password</label>
+        </div>
+      </div>
+      <p>
+   <button id="button-form" type="submit" class="btn waves-effect black darken-2" name="Submit" id="submit">Log In<i class="material-icons right">send</i></button>
+  </p>
+    </form>
+</div>
+
+
+<%- include ./partials/footer.ejs %>
