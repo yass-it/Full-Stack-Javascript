@@ -1,5 +1,4 @@
-web: node indexProduction.js
-
+web: npm run prod
 
 
 
