@@ -12,10 +12,13 @@ app.use(express.static(__dirname + '/public'));
 // mongoose.connect('mongodb://localhost/hayat',{
 //   useMongoClient: true
 // })
+//i have to ask lourens tommorwo about to hide the this link
 mongoose.connect('mongodb://<yasser>:<admin>@ds129333.mlab.com:29333/hayat-project',{
 	 useMongoClient: true
 })
-
+// mongoose.connect(process.env.mlab || "mongodb://localhost/hayat",{
+// 	useMongoClient: true
+// })
 //configre ejs
 app.set('view engine', 'ejs')
 app.use(bodyParser.json())
@@ -45,8 +48,8 @@ app.use('/',users)
 // app.listen(3000, () => {
 //   console.log('Listening on port 3000')
 // })
-// var port = process.env.PORT || 3000
-// app.listen(3000, () => {
-//   console.log('Listening on port 3000')
-// })
+var port = process.env.PORT || 3000
+app.listen(port, () => {
+  console.log('Listening on port ' + port)
+})
 module.exports = app;
