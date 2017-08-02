@@ -18,6 +18,7 @@ mongoose.connect('mongodb://<yasser>:<admin>@ds129333.mlab.com:29333/hayat-proje
 
 //configre ejs
 app.set('view engine', 'ejs')
+app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
 app.use(require('express-session')({

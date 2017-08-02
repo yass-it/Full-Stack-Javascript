@@ -2,6 +2,9 @@ const express         = require('express')
 const router          = express.Router()
 const usersController = require('../controllers/users_controller')
 const passport        = require ('passport')
+
+ router.post('/marker', usersController.marker)
+
  router.get('/secret',usersController.isLoggedIn,usersController.viewSecret)
  router.get('/signup', usersController.viewSignup)
  router.post('/signup',usersController.signup)

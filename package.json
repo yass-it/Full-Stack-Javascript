@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-     "prod": "node indexProduction.js",
+     "start": "node indexProduction.js",
     "dev": "nodemon indexDevelopment.js"
    
   },

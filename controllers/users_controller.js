@@ -44,6 +44,10 @@ const controller = {
         return next();
       }
       res.redirect("/login")
+    },
+
+    marker(req, res) {
+      console.log(req.body)
     }
   
 
