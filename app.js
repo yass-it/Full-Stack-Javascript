@@ -16,7 +16,7 @@ app.use(express.static(__dirname + '/public'));
 // mongoose.connect('mongodb://<yasser>:<admin>@ds129333.mlab.com:29333/hayat-project',{
 // 	 useMongoClient: true
 // })
-mongoose.connect(process.env.mlab || "mongodb://localhost/hayat",{
+mongoose.connect('mongodb://<yasser>:<admin>@ds129333.mlab.com:29333/hayat-project' || "mongodb://localhost/hayat",{
 	useMongoClient: true
 })
 //configre ejs
