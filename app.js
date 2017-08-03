@@ -9,17 +9,11 @@ var mongoose              = require('mongoose')
  mongoose.Promise      = global.Promise  
 var User                  = require('./models/user')
 app.use(express.static(__dirname + '/public'));
-// mongoose.connect('mongodb://localhost/hayat',{
-//   useMongoClient: true
-// })
-//i have to ask lourens tommorwo about to hide the this link
-mongoose.connect('mongodb://<yasser>:<admin>@ds129333.mlab.com:29333/hayat-project',{
+
+mongoose.connect('mongodb://yasser:admin@ds129333.mlab.com:29333/hayat-project',{
 	 useMongoClient: true
 })
-// mongoose.connect('mongodb://<yasser>:<admin>@ds129333.mlab.com:29333/hayat-project' || "mongodb://localhost/hayat",{
-// 	useMongoClient: true
-// })
-//configre ejs
+
 app.set('view engine', 'ejs')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
