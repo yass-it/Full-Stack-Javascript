@@ -13,12 +13,12 @@ app.use(express.static(__dirname + '/public'));
 //   useMongoClient: true
 // })
 //i have to ask lourens tommorwo about to hide the this link
-mongoose.connect('mongodb://<yasser>:<admin>@ds129333.mlab.com:29333/hayat-project',{
-	 useMongoClient: true
-})
-// mongoose.connect(process.env.mlab || "mongodb://localhost/hayat",{
-// 	useMongoClient: true
+// mongoose.connect('mongodb://<yasser>:<admin>@ds129333.mlab.com:29333/hayat-project',{
+// 	 useMongoClient: true
 // })
+mongoose.connect(process.env.mlab || "mongodb://localhost/hayat",{
+	useMongoClient: true
+})
 //configre ejs
 app.set('view engine', 'ejs')
 app.use(bodyParser.json())
