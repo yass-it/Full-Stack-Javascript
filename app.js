@@ -6,7 +6,7 @@ var LocalStrategy         = require('passport-local')
 var passportLocalMongoose = require('passport-local-mongoose')
 var users                 = require('./routes/users')
 var mongoose              = require('mongoose')
-var mongoose.Promise      = global.Promise  
+ mongoose.Promise      = global.Promise  
 var User                  = require('./models/user')
 app.use(express.static(__dirname + '/public'));
 // mongoose.connect('mongodb://localhost/hayat',{
